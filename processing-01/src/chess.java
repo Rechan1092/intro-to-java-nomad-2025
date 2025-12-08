@@ -31,14 +31,6 @@ public class chess extends PApplet {
         }
     }
 
-
-    @Override
-    public void keyPressed() {
-        if (key == ' ') {
-            System.out.println("You clicked on space");
-        }
-    }
-
     public static void main(String[] args) {
         PApplet.main("chess");
     }

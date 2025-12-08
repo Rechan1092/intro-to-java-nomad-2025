@@ -5,8 +5,8 @@ public class snowflakes extends PApplet {
     public static float initValue = PI/8;
     public static float deltaY = 1;
     public static float y = 0;
-    public static float deltaX = 10;
-    public static float x = 0;
+//    public static float deltaX = 10;
+//    public static float x = 0;
 
     @Override
     public void settings() {
