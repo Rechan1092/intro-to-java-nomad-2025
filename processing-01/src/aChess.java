@@ -1,7 +1,6 @@
 import processing.core.PApplet;
 
-public class chess extends PApplet {
-//    GLOBAL
+public class aChess extends PApplet {
     int x = 0;
     int y = 0;
 
@@ -12,18 +11,19 @@ public class chess extends PApplet {
 
     @Override
     public void draw() {
-        x = 900 / 3; // 300
+        x = 900 / 3;
         y = 900 / 3;
 
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
-                int x1 = x + j * 50; // 300
-                int y1 = y + i * 50; // 300
+                int x1 = x + j * 50;
+                int y1 = y + i * 50;
+
                 fill(255, 255, 255);
                 square(x1, y1, 50);
 
                 if (mouseX >= x1 && mouseY >= y1 && mouseX <= x1 + 50 && mouseY <= y1 + 50) {
-                    fill(255, 0, 0);
+                    fill(255, 0, 255);
                     square(x1, y1, 50);
                 }
             }
@@ -31,6 +31,6 @@ public class chess extends PApplet {
     }
 
     public static void main(String[] args) {
-        PApplet.main("chess");
+        PApplet.main("aChess");
     }
 }
